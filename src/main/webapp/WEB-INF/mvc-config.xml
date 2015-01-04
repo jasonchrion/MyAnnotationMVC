@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<entitys>
+		<entity name="login" class="lxw.mymvc.test.Login" />
+	</entitys>
+	
+	<action entityName="login" class="lxw.mymvc.test.LoginAction" path="/login">
+		<forward name="success" value="/WEB-INF/view/success.jsp"/>
+		<forward name="failed" value="/WEB-INF/view/failed.jsp"/>
+	</action>
+	
+	<scan base-package="lxw.mymvc.test"/>
+</mvc>
